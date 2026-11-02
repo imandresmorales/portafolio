@@ -203,3 +203,6 @@ body{
         gap: 40px;
     }
 }
+.experiencia__item p + p {
+    margin-top: 12px;
+}
