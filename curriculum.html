@@ -1,92 +1,94 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Currículum de Andrés Morales: experiencia como desarrollador Full Stack, estudios, certificaciones y habilidades técnicas."
+      content="Résumé of Andrés Morales: experience as a Full Stack developer, education, certifications and technical skills."
+      data-i18n-content="meta.resume.description"
     />
-    <title>Currículum | Andrés Morales</title>
+    <title data-i18n="meta.resume.title">Résumé | Andrés Morales</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/i18n.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <a class="header__menu__link" href="index.html">Home</a>
-        <a class="header__menu__link" href="about.html">Sobre mí</a>
-        <a class="header__menu__link" href="curriculum.html">Currículum</a>
+      <nav class="header__menu" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+        <a class="header__menu__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="header__menu__link" href="about.html" data-i18n="nav.about">About me</a>
+        <a class="header__menu__link" href="curriculum.html" aria-current="page" data-i18n="nav.resume">Résumé</a>
+        <div class="lang-switcher" role="group" aria-label="Language" data-i18n-aria-label="nav.language">
+          <button type="button" class="lang-switcher__option" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+          <button type="button" class="lang-switcher__option" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        </div>
       </nav>
     </header>
     <main class="presentacion">
       <section class="presentacion__contenido">
         <h1 class="presentacion__contenido__titulo">
-          <strong>Currículum</strong>
+          <strong data-i18n="resume.title">Résumé</strong>
         </h1>
-        <p class="presentacion__contenido__texto">
-          Desarrollador Full Stack con experiencia en React, Next.js, NestJS,
-          Node.js, Flutter y Python. Apasionado por crear soluciones web accesibles, funcionales y bien
-          estructuradas. Me destaco por el aprendizaje autónomo, el uso de
-          herramientas modernas y la aplicación de buenas prácticas de
-          desarrollo en cada proyecto.
+        <p class="presentacion__contenido__texto" data-i18n="resume.summary">
+          Full Stack developer with experience in React, Next.js, NestJS,
+          Node.js, Flutter and Python. Passionate about building accessible,
+          functional and well-structured web solutions. I stand out for
+          self-directed learning, using modern tools and applying good
+          development practices in every project.
         </p>
 
-        <h2 class="presentacion__contenido__titulo">Experiencias</h2>
+        <h2 class="presentacion__contenido__titulo" data-i18n="resume.experience">Experience</h2>
         <div class="presentacion__contenido__texto">
           <div class="experiencia__item">
-            <div class="experiencia__titulo">
-              Desarrollador Full Stack - Empresa de software, Guayaquil (2025 -
-              actualidad)
+            <div class="experiencia__titulo" data-i18n="resume.job1.title">
+              Full Stack Developer - Software company, Guayaquil (2025 - present)
             </div>
-            <p>
-              Desarrollo de backends con NestJS y Node.js (autenticación JWT,
-              control de acceso por roles, verificación de identidad y tiempo
-              real con SSE), interfaces web con React, Next.js y Three.js, y
-              apps móviles con Flutter con geolocalización en tiempo real.
-              Integraciones con Shopify, pasarela de pagos Nuvei y servicios de
-              mapas.
+            <p data-i18n="resume.job1.description">
+              Backends with NestJS and Node.js (JWT authentication, role-based
+              access control, identity verification and real-time features with
+              SSE), web interfaces with React, Next.js and Three.js, and Flutter
+              mobile apps with real-time geolocation. Integrations with Shopify,
+              the Nuvei payment gateway and map services.
             </p>
-            <p>
-              Reduje a la mitad el tiempo de carga inicial de una aplicación,
-              logré que el inicio de sesión cargue unas 3 veces más rápido y bajé
-              el peso de las imágenes de más de 20 MB a menos de 5 MB migrando
-              de PNG a WebP.
+            <p data-i18n="resume.job1.results">
+              Cut an app's initial load time in half, made login load about 3
+              times faster and reduced image weight from over 20 MB to under 5 MB
+              by migrating from PNG to WebP.
             </p>
           </div>
           <div class="experiencia__item">
-            <div class="experiencia__titulo">
-              Proyecto institucional - ESPOL / Ministerio de Telecomunicaciones
-              (2022)
+            <div class="experiencia__titulo" data-i18n="resume.job2.title">
+              Institutional project - ESPOL / Ministry of Telecommunications (2022)
             </div>
-            <p>
-              Aplicación web para autodiagnóstico de competencias digitales con
-              diseño accesible.
+            <p data-i18n="resume.job2.description">
+              Web application for digital skills self-assessment with an
+              accessible design.
             </p>
           </div>
           <div class="experiencia__item">
-            <div class="experiencia__titulo">
-              Prácticas profesionales - ESPOL (2021)
+            <div class="experiencia__titulo" data-i18n="resume.job3.title">
+              Internship - ESPOL (2021)
             </div>
-            <p>
-              Desarrollo de prototipos UX/UI para sitio educativo infantil,
-              priorizando accesibilidad y usabilidad.
+            <p data-i18n="resume.job3.description">
+              UX/UI prototypes for a children's educational website, focused on
+              accessibility and usability.
             </p>
           </div>
         </div>
 
-        <h2 class="presentacion__contenido__titulo">
-          Estudios y certificaciones
+        <h2 class="presentacion__contenido__titulo" data-i18n="resume.education">
+          Education and certifications
         </h2>
         <div class="presentacion__contenido__texto">
           <div class="estudio__item">
-            <div class="estudio__titulo">
-              Oracle Next Education (ONE) – Oracle y Alura Latam (2025 - en
-              curso)
+            <div class="estudio__titulo" data-i18n="resume.edu1.title">
+              Oracle Next Education (ONE) – Oracle and Alura Latam (2025 - in
+              progress)
             </div>
-            <p>
-              Ruta formativa enfocada en el desarrollo web, diseño front-end,
-              Git/GitHub y técnicas de IA generativa.
+            <p data-i18n="resume.edu1.description">
+              Training path focused on web development, front-end design,
+              Git/GitHub and generative AI techniques.
             </p>
           </div>
 
@@ -95,56 +97,57 @@
               Oracle Cloud Infrastructure 2025 Certified Foundations Associate –
               Oracle (2026)
             </div>
-            <p>
-              Certificación oficial en fundamentos de la nube de Oracle (OCI).
+            <p data-i18n="resume.edu2.description">
+              Official certification in Oracle Cloud Infrastructure (OCI)
+              fundamentals.
             </p>
           </div>
 
           <div class="estudio__item">
-            <div class="estudio__titulo">
-              Full Stack Open - Universidad de Helsinki (2024)
+            <div class="estudio__titulo" data-i18n="resume.edu3.title">
+              Full Stack Open - University of Helsinki (2024)
             </div>
-            <p>
-              Curso en línea de desarrollo web con React, Node.js, pruebas
-              automatizadas y despliegue.
+            <p data-i18n="resume.edu3.description">
+              Online web development course covering React, Node.js, automated
+              testing and deployment.
             </p>
           </div>
           <div class="estudio__item">
-            <div class="estudio__titulo">
-              Ingeniería en Ciencias de la Computación - ESPOL (2022)
+            <div class="estudio__titulo" data-i18n="resume.edu4.title">
+              B.Eng. in Computer Science - ESPOL (2022)
             </div>
-            <p>
-              Carrera universitaria enfocada en desarrollo de software,
-              algoritmos y estructuras de datos.
+            <p data-i18n="resume.edu4.description">
+              University degree focused on software development, algorithms and
+              data structures.
             </p>
           </div>
         </div>
 
-        <h2 class="presentacion__contenido__titulo">Habilidades Técnicas</h2>
+        <h2 class="presentacion__contenido__titulo" data-i18n="resume.skills">Technical skills</h2>
         <div class="presentacion__contenido__texto">
           <div class="habilidad__item">
             <div class="habilidad__titulo">Frontend</div>
-            <p>
+            <p data-i18n="resume.skills.frontend">
               React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3,
-              Zustand, Three.js, diseño responsive
+              Zustand, Three.js, responsive design
             </p>
           </div>
           <div class="habilidad__item">
             <div class="habilidad__titulo">Backend</div>
-            <p>
-              Node.js, NestJS, Express, Python, Java, Spring, C#, APIs REST,
-              GraphQL, SSE, autenticación JWT
+            <p data-i18n="resume.skills.backend">
+              Node.js, NestJS, Express, Python, Java, Spring, C#, REST APIs,
+              GraphQL, SSE, JWT authentication
             </p>
           </div>
           <div class="habilidad__item">
-            <div class="habilidad__titulo">Bases de datos</div>
+            <div class="habilidad__titulo" data-i18n="resume.skills.databases">Databases</div>
             <p>
               PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Supabase, Prisma,
               TypeORM
             </p>
           </div>
           <div class="habilidad__item">
-            <div class="habilidad__titulo">Móvil</div>
+            <div class="habilidad__titulo" data-i18n="resume.skills.mobile">Mobile</div>
             <p>Flutter, Dart</p>
           </div>
           <div class="habilidad__item">
@@ -152,30 +155,33 @@
             <p>Jest, Vitest, Supertest, Playwright, Cypress</p>
           </div>
           <div class="habilidad__item">
-            <div class="habilidad__titulo">Herramientas</div>
+            <div class="habilidad__titulo" data-i18n="resume.skills.tools">Tools</div>
             <p>Git, GitHub, Postman, Figma, MarvelApp, Jira, Trello</p>
           </div>
           <div class="habilidad__item">
-            <div class="habilidad__titulo">Metodologías</div>
+            <div class="habilidad__titulo" data-i18n="resume.skills.methodologies">Methodologies</div>
             <p>Agile, Scrum, Design Thinking</p>
           </div>
           <div class="habilidad__item">
-            <div class="habilidad__titulo">Otros</div>
-            <p>
-              Docker, AWS, Oracle Cloud Infrastructure (OCI), IA generativa,
-              análisis de requerimientos
+            <div class="habilidad__titulo" data-i18n="resume.skills.other">Other</div>
+            <p data-i18n="resume.skills.otherList">
+              Docker, AWS, Oracle Cloud Infrastructure (OCI), generative AI,
+              requirements analysis
             </p>
           </div>
         </div>
       </section>
       <img
         class="presentacion__imagen"
-        src="./assets/Imagen.jpg"
-        alt="Foto de Andrés Morales desarrollando proyectos"
+        src="./assets/foto-perfil.webp"
+        alt="Photo of Andrés Morales"
+        data-i18n-alt="photo.alt"
+        width="400"
+        height="400"
       />
     </main>
     <footer class="footer">
-      <p>Desarrollado por Andrés Morales</p>
+      <p data-i18n="footer.credits">Built by Andrés Morales</p>
     </footer>
   </body>
 </html>

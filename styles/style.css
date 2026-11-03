@@ -28,6 +28,8 @@ body{
 
 .header__menu{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 80px;
 }
 
@@ -205,4 +207,38 @@ body{
 }
 .experiencia__item p + p {
     margin-top: 12px;
+}
+
+/* Selector de idioma ES / EN */
+.lang-switcher {
+    display: flex;
+    border: 2px solid var(--color-terciario);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lang-switcher__option {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border: none;
+    background: transparent;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.lang-switcher__option:hover {
+    background-color: var(--color-hover);
+}
+
+.lang-switcher__option--active,
+.lang-switcher__option--active:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.lang-switcher__option:focus-visible {
+    outline: 2px solid var(--color-secundario);
+    outline-offset: -4px;
 }
