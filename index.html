@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Andrés Morales, desarrollador Full Stack: React, Next.js, NestJS, Node.js y Flutter. Aplicaciones web y móviles en producción."
+      content="Andrés Morales, Full Stack developer: React, Next.js, NestJS, Node.js and Flutter. Web and mobile apps in production."
+      data-i18n-content="meta.home.description"
     />
-    <title>Andrés Morales | Desarrollador Full Stack</title>
+    <title data-i18n="meta.home.title">Andrés Morales | Full Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/i18n.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <a class="header__menu__link" href="index.html">Home</a>
-        <a class="header__menu__link" href="about.html">Sobre mí</a>
-        <a class="header__menu__link" href="curriculum.html">Currículum</a>
+      <nav class="header__menu" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+        <a class="header__menu__link" href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+        <a class="header__menu__link" href="about.html" data-i18n="nav.about">About me</a>
+        <a class="header__menu__link" href="curriculum.html" data-i18n="nav.resume">Résumé</a>
+        <div class="lang-switcher" role="group" aria-label="Language" data-i18n-aria-label="nav.language">
+          <button type="button" class="lang-switcher__option" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+          <button type="button" class="lang-switcher__option" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        </div>
       </nav>
     </header>
     <main class="presentacion">
       <section class="presentacion__contenido">
         <h1 class="presentacion__contenido__titulo">
-          Impulsa tus proyectos digitales
-          <strong class="titulo-destaque"
-            >con soluciones Full Stack eficientes y modernas</strong
+          <span data-i18n="home.title">Power up your digital projects</span>
+          <strong class="titulo-destaque" data-i18n="home.titleHighlight"
+            >with efficient, modern Full Stack solutions</strong
           >
         </h1>
-        <p class="presentacion__contenido__texto">
-          Soy Andrés Morales, desarrollador Full Stack especializado en React,
-          Next.js, NestJS y Node.js. Creo aplicaciones web y móviles modernas,
-          accesibles y funcionales que impulsan resultados reales.
+        <p class="presentacion__contenido__texto" data-i18n="home.intro">
+          I'm Andrés Morales, a Full Stack developer specialized in React,
+          Next.js, NestJS and Node.js. I build modern, accessible and functional
+          web and mobile apps that drive real results.
         </p>
         <div class="presentacion__enlaces">
-          <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+          <h2 class="presentacion__enlaces__subtitulo" data-i18n="home.social">Find me online</h2>
           <a
             class="presentacion__enlaces__link"
-            href="https://linkedin.com/in/imandresmorales"
+            href="https://www.linkedin.com/in/imandresmorales"
           >
-            <img src="./assets/linkedin.png" alt="LinkedIn Logo" />
-            Linkedin
+            <img src="./assets/linkedin.png" alt="" width="32" height="32" />
+            LinkedIn
           </a>
           <a
             class="presentacion__enlaces__link"
             href="https://github.com/imandresmorales"
           >
-            <img src="./assets/github.png" alt="GitHub Logo" />
-            Github
+            <img src="./assets/github.png" alt="" width="32" height="32" />
+            GitHub
           </a>
         </div>
       </section>
       <img
         class="presentacion__imagen"
-        src="./assets/Imagen.jpg"
-        alt="Foto de Andrés Morales"
+        src="./assets/foto-perfil.webp"
+        alt="Photo of Andrés Morales"
+        data-i18n-alt="photo.alt"
+        width="400"
+        height="400"
       />
     </main>
     <footer class="footer">
-      <p>Desarrollado por Andrés Morales</p>
+      <p data-i18n="footer.credits">Built by Andrés Morales</p>
     </footer>
   </body>
 </html>

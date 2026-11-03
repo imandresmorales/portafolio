@@ -1,60 +1,70 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Conoce a Andrés Morales, ingeniero en Ciencias de la Computación y desarrollador Full Stack de aplicaciones web y móviles."
+      content="Meet Andrés Morales, Computer Science Engineer and Full Stack developer of web and mobile apps."
+      data-i18n-content="meta.about.description"
     />
-    <title>Sobre mí | Andrés Morales</title>
+    <title data-i18n="meta.about.title">About me | Andrés Morales</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/i18n.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <a class="header__menu__link" href="index.html">Home</a>
-        <a class="header__menu__link" href="about.html">Sobre mí</a>
-        <a class="header__menu__link" href="curriculum.html">Currículum</a>
+      <nav class="header__menu" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+        <a class="header__menu__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="header__menu__link" href="about.html" aria-current="page" data-i18n="nav.about">About me</a>
+        <a class="header__menu__link" href="curriculum.html" data-i18n="nav.resume">Résumé</a>
+        <div class="lang-switcher" role="group" aria-label="Language" data-i18n-aria-label="nav.language">
+          <button type="button" class="lang-switcher__option" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+          <button type="button" class="lang-switcher__option" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        </div>
       </nav>
     </header>
     <main class="presentacion">
       <section class="presentacion__contenido">
-        <h1 class="presentacion__contenido__titulo">Sobre mí</h1>
-        <p class="presentacion__contenido__texto">
-          Soy Andrés Morales, ingeniero en Ciencias de la Computación y
-          desarrollador Full Stack con experiencia en tecnologías como React,
-          Next.js, NestJS, Node.js, Flutter, Java y Python. Me apasiona crear
-          aplicaciones web funcionales, accesibles y bien estructuradas,
-          combinando una buena experiencia de usuario con un backend sólido.
+        <h1 class="presentacion__contenido__titulo" data-i18n="about.title">About me</h1>
+        <p class="presentacion__contenido__texto" data-i18n="about.p1">
+          I'm Andrés Morales, a Computer Science Engineer and Full Stack
+          developer with experience in technologies such as React, Next.js,
+          NestJS, Node.js, Flutter, Java and Python. I love building functional,
+          accessible and well-structured web applications that combine a great
+          user experience with a solid backend.
         </p>
-        <p class="presentacion__contenido__texto">
-          Desde septiembre de 2025 trabajo como desarrollador Full Stack en una
-          empresa de software, construyendo aplicaciones web y móviles en
-          producción: backends con autenticación y tiempo real, integraciones
-          con pagos y e-commerce, y mejoras de rendimiento que redujeron a la
-          mitad el tiempo de carga de una aplicación.
+        <p class="presentacion__contenido__texto" data-i18n="about.p2">
+          Since September 2025 I've been working as a Full Stack developer at a
+          software company, building web and mobile apps in production: backends
+          with authentication and real-time features, payment and e-commerce
+          integrations, and performance improvements that cut an app's load time
+          in half.
         </p>
-        <p class="presentacion__contenido__texto">
-          He trabajado en proyectos institucionales, educativos y de impacto
-          social, aplicando metodologías ágiles y buenas prácticas de
-          desarrollo. Disfruto aprender de forma autónoma y explorar nuevas
-          tecnologías como la inteligencia artificial y blockchain.
+        <p class="presentacion__contenido__texto" data-i18n="about.p3">
+          I've worked on institutional, educational and social impact projects,
+          applying agile methodologies and good development practices. I enjoy
+          learning on my own and exploring new technologies such as artificial
+          intelligence and blockchain.
         </p>
-        <p class="presentacion__contenido__texto">
-          Mi enfoque siempre está en resolver problemas reales a través del
-          código, colaborando con equipos multidisciplinarios y adaptándome a
-          nuevos desafíos con responsabilidad y compromiso.
+        <p class="presentacion__contenido__texto" data-i18n="about.p4">
+          My focus is always on solving real problems through code, working with
+          multidisciplinary teams and taking on new challenges with
+          responsibility and commitment.
         </p>
       </section>
       <img
         class="presentacion__imagen"
-        src="./assets/Imagen.jpg"
-        alt="Foto de Andrés Morales"
+        src="./assets/foto-perfil.webp"
+        alt="Photo of Andrés Morales"
+        data-i18n-alt="photo.alt"
+        width="400"
+        height="400"
       />
     </main>
     <footer class="footer">
-      <p>Desarrollado por Andrés Morales</p>
+      <p data-i18n="footer.credits">Built by Andrés Morales</p>
     </footer>
   </body>
 </html>
